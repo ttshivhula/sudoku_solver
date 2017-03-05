@@ -6,7 +6,7 @@
 /*   By: ttshivhu <ttshivhu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/02 11:53:57 by ttshivhu          #+#    #+#             */
-/*   Updated: 2017/03/02 17:10:01 by ttshivhu         ###   ########.fr       */
+/*   Updated: 2017/03/05 18:49:54 by ttshivhu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,23 +36,26 @@ void    print_row(int   **row)
 {
     int i;
     int j;
-
+    
+    ft_putstr("|-----x-----x-----|\n");
     i = -1;
     while (++i < 9)
     {
         j = -1;
         while (++j < 9)
         {
-            if (j == 8)
-                ft_putnbr(row[i][j]);
-            else
-            {
-                ft_putnbr(row[i][j]);
-                ft_putstr(" ");
-            }
+            if(j == 0)
+                ft_putstr("|");
+            ft_putnbr(row[i][j]);
+            ft_putstr("|");
         }
-        ft_putstr("\n");
+        if (i == 2 || i == 5)
+            ft_putstr("\n|-----x-----x-----|\n");
+        else
+            ft_putstr("\n");
     }
+    ft_putstr("|-----x-----x-----|\n");
+    
 }
 
 int    sudoku_err(void)
