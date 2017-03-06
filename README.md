@@ -14,7 +14,7 @@ This can solve any sudoku that is correct, solving time doesen't depend on the l
 
 ###Output
 
-|-----x-----x-----|
+X-----x-----x-----X
 
 |5|3|4|6|7|8|9|1|2|
 
@@ -22,7 +22,7 @@ This can solve any sudoku that is correct, solving time doesen't depend on the l
 
 |1|9|8|3|4|2|5|6|7|
 
-|-----x-----x-----|
+X-----x-----x-----X
 
 |8|5|9|7|6|1|4|2|3|
 
@@ -30,7 +30,7 @@ This can solve any sudoku that is correct, solving time doesen't depend on the l
 
 |7|1|3|9|2|4|8|5|6|
 
-|-----x-----x-----|
+X-----x-----x-----X
 
 |9|6|1|5|3|7|2|8|4|
 
@@ -38,7 +38,7 @@ This can solve any sudoku that is correct, solving time doesen't depend on the l
 
 |3|4|5|2|8|6|1|7|9|
 
-|-----x-----x-----|
+X-----x-----x-----X
 
 #Bug Report
 

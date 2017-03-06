@@ -6,7 +6,7 @@
 /*   By: ttshivhu <ttshivhu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/03/02 11:53:57 by ttshivhu          #+#    #+#             */
-/*   Updated: 2017/03/05 18:49:54 by ttshivhu         ###   ########.fr       */
+/*   Updated: 2017/03/05 22:53:10 by ttshivhu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void    print_row(int   **row)
     int i;
     int j;
     
-    ft_putstr("|-----x-----x-----|\n");
+    ft_putstr("x-----x-----x-----x\n");
     i = -1;
     while (++i < 9)
     {
@@ -50,11 +50,11 @@ void    print_row(int   **row)
             ft_putstr("|");
         }
         if (i == 2 || i == 5)
-            ft_putstr("\n|-----x-----x-----|\n");
+            ft_putstr("\nx-----x-----x-----x\n");
         else
             ft_putstr("\n");
     }
-    ft_putstr("|-----x-----x-----|\n");
+    ft_putstr("x-----x-----x-----x\n");
     
 }
 
